@@ -8,7 +8,6 @@ def components_menu():
     print("\nComponents Menu:")
     print("1. Component A")
     print("2. Component B")
-    print("3. Component C")
     choice = input("Select an option: ")
     print(f"You selected Component {choice}")
 
