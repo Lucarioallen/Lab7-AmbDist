@@ -1,5 +1,6 @@
 import os
-
+import componente_1
+import calculadora
 
 def clear_screen():
     os.system('cls')
@@ -12,9 +13,9 @@ def components_menu():
     print("2. Component calculadora")
     choice = input("Selecciona una opcion: ")
     if choice == '1':
-        import componente_1
+        componente_1.main()
     elif choice == '2':
-        import calculadora 
+        calculadora.main()
     else:
         print("eleccion invalida prueba de nuevo.")
         input("Presiona enter para continuar...")
