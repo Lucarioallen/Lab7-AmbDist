@@ -9,35 +9,34 @@ def load_and_execute_module(module_name):
         module = importlib.import_module(module_name)
         module.execute()
     except ModuleNotFoundError:
-        print(f"Module {module_name} not found.")
+        print(f"Modulo {module_name} no encontrado.")
     except AttributeError:
-        print(f"Module {module_name} does not have an execute function.")
-    input("Press Enter to continue...")
+        print(f"Modulo {module_name} no tiene una funcion ejecutablr")
+    input("Presiona enter para continuar...")
 
 def components_menu():
     clear_screen()
-    print("\nComponents Menu:")
+    print("\nMenu de Componentes:")
     print("1. Componente saludos")
     print("2. Component calculadora")
-    choice = input("Select an option: ")
+    choice = input("Selecciona una opcion: ")
     if choice == '1':
             load_and_execute_module('componente_1')
     elif choice == '2':
             load_and_execute_module('calculadora')
             
     else:
-        print("Invalid choice, please try again.")
-        input("Press Enter to continue...")
+        print("eleccion invalida prueba de nuevo.")
+        input("Presiona enter para continuar...")
 
 
 def aspects_menu():
     clear_screen()
-    print("\nAspects Menu:")
+    print("\nMenu de Aspectos:")
     print("1. Aspect X")
     print("2. Aspect Y")
     print("3. Aspect Z")
-    choice = input("Select an option: ")
-    print(f"You selected Aspect {choice}")
+    choice = input("Selecciona un aopcion: ")
 
 # def agents_menu():
 #     clear_screen()
@@ -50,14 +49,14 @@ def aspects_menu():
 
 def main_menu():
     
-    print("Hello!")
-    print("Select your preferred paradigm:")
-    print("1. Components")
-    print("2. Aspects")
-    print("3. Agents")
+    print("Hola!")
+    print("Selectciona un paradigma preferido:")
+    print("1. Componentes")
+    print("2. Aspectos")
+    print("3. Agentes")
     
     while True:
-        choice = input("Enter the number of your choice: ")
+        choice = input("Selecciona la opcion: ")
         if choice == '1':
             components_menu()
             break
@@ -68,7 +67,7 @@ def main_menu():
             load_and_execute_module('Agentes')
             break
         else:
-            print("Invalid choice, please try again.")
+            print("opcion invalida.")
 
 while(True):
     main_menu()
