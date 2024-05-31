@@ -3,6 +3,7 @@ import componente_1
 import calculadora
 import fibonaci
 import montecarlo
+import run
 
 x=""
 
@@ -29,11 +30,8 @@ def components_menu():
 
 def aspects_menu():
     clear_screen()
-    print("\nMenu de Aspectos:")
-    print("1. Aspect X")
-    print("2. Aspect Y")
-    print("3. Aspect Z")
-    choice = input("Selecciona una opcion: ")
+    run.main()
+    
 
 def agents_menu():
     clear_screen()
