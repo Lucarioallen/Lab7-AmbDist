@@ -1,7 +1,18 @@
 import os
+import importlib
 
 def clear_screen():
     os.system('cls')
+
+def load_and_execute_module(module_name):
+    try:
+        module = importlib.import_module(module_name)
+        module.execute()
+    except ModuleNotFoundError:
+        print(f"Module {module_name} not found.")
+    except AttributeError:
+        print(f"Module {module_name} does not have an execute function.")
+    input("Press Enter to continue...")
 
 def components_menu():
     clear_screen()
@@ -9,7 +20,15 @@ def components_menu():
     print("1. Component A")
     print("2. Component B")
     choice = input("Select an option: ")
-    print(f"You selected Component {choice}")
+    if choice == '1':
+            load_and_execute_module('componente_1')
+    elif choice == '2':
+            load_and_execute_module('componente_2')
+            
+    else:
+        print("Invalid choice, please try again.")
+        input("Press Enter to continue...")
+
 
 def aspects_menu():
     clear_screen()
