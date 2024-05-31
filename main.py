@@ -1,18 +1,9 @@
 import os
-import importlib
+
 
 def clear_screen():
     os.system('cls')
 
-def load_and_execute_module(module_name):
-    try:
-        module = importlib.import_module(module_name)
-        module.execute()
-    except ModuleNotFoundError:
-        print(f"Modulo {module_name} no encontrado.")
-    except AttributeError:
-        print(f"Modulo {module_name} no tiene una funcion ejecutable")
-    input("Presiona enter para continuar...")
 
 def components_menu():
     clear_screen()
