@@ -17,13 +17,13 @@ def load_and_execute_module(module_name):
 def components_menu():
     clear_screen()
     print("\nComponents Menu:")
-    print("1. Component A")
-    print("2. Component B")
+    print("1. Componente saludos")
+    print("2. Component calculadora")
     choice = input("Select an option: ")
     if choice == '1':
             load_and_execute_module('componente_1')
     elif choice == '2':
-            load_and_execute_module('componente_2')
+            load_and_execute_module('calculadora')
             
     else:
         print("Invalid choice, please try again.")
@@ -39,14 +39,14 @@ def aspects_menu():
     choice = input("Select an option: ")
     print(f"You selected Aspect {choice}")
 
-def agents_menu():
-    clear_screen()
-    print("\nAgents Menu:")
-    print("1. Agent 1")
-    print("2. Agent 2")
-    print("3. Agent 3")
-    choice = input("Select an option: ")
-    print(f"You selected Agent {choice}")
+# def agents_menu():
+#     clear_screen()
+#     print("\nAgents Menu:")
+#     print("1. Agent 1")
+#     print("2. Agent 2")
+#     print("3. Agent 3")
+#     choice = input("Select an option: ")
+#     print(f"You selected Agent {choice}")
 
 def main_menu():
     
@@ -65,7 +65,7 @@ def main_menu():
             aspects_menu()
             break
         elif choice == '3':
-            agents_menu()
+            load_and_execute_module('Agentes')
             break
         else:
             print("Invalid choice, please try again.")
