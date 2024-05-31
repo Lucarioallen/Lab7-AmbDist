@@ -11,7 +11,7 @@ def load_and_execute_module(module_name):
     except ModuleNotFoundError:
         print(f"Modulo {module_name} no encontrado.")
     except AttributeError:
-        print(f"Modulo {module_name} no tiene una funcion ejecutablr")
+        print(f"Modulo {module_name} no tiene una funcion ejecutable")
     input("Presiona enter para continuar...")
 
 def components_menu():
