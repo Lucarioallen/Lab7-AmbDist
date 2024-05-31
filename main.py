@@ -57,7 +57,7 @@ def main_menu():
             aspects_menu()
             break
         elif choice == '3':
-            load_and_execute_module('calculadora_gentes')
+            
             break
         else:
             print("opcion invalida.")

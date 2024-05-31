@@ -6,3 +6,5 @@ def saludar(nombre):
 nombre = input("Ingrese su nombre: ")
 saludar(nombre)
 
+input("presiona enter para continuar...")
+
