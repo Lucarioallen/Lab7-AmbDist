@@ -36,7 +36,7 @@ def aspects_menu():
     print("1. Aspect X")
     print("2. Aspect Y")
     print("3. Aspect Z")
-    choice = input("Selecciona un aopcion: ")
+    choice = input("Selecciona una opcion: ")
 
 # def agents_menu():
 #     clear_screen()
@@ -50,7 +50,7 @@ def aspects_menu():
 def main_menu():
     
     print("Hola!")
-    print("Selectciona un paradigma preferido:")
+    print("Seleccciona un paradigma preferido:")
     print("1. Componentes")
     print("2. Aspectos")
     print("3. Agentes")
@@ -64,7 +64,7 @@ def main_menu():
             aspects_menu()
             break
         elif choice == '3':
-            load_and_execute_module('Agentes')
+            load_and_execute_module('calculadora_gentes')
             break
         else:
             print("opcion invalida.")
