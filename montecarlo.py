@@ -49,4 +49,4 @@ def monte_carlo():
     pi_estimate = 4 * total_points_inside_circle / num_points
 
     print("El estimado del valor de PI con el método de Montecarlo, usando ", num_points ," es de : ", pi_estimate)
-
+    input("presiona enter para continuar...")

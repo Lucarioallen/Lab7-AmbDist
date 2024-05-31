@@ -66,3 +66,4 @@ def fibonaci():
     print("Tiempo de ejecución con hilos:", end_time - start_time, "segundos")
 
     # Solicitar el número de elementos de la secuencia de Fibonacci a calcular
+    input("presiona enter para continuar...")

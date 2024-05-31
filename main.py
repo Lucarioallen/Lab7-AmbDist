@@ -1,12 +1,17 @@
 import os
 import componente_1
 import calculadora
+import fibonaci
+import montecarlo
+
+x=""
 
 def clear_screen():
     os.system('cls')
 
 
 def components_menu():
+    global x
     clear_screen()
     print("\nMenu de Componentes:")
     print("1. Componente saludos")
@@ -14,6 +19,7 @@ def components_menu():
     choice = input("Selecciona una opcion: ")
     if choice == '1':
         componente_1.main()
+        x=componente_1.get_name()
     elif choice == '2':
         calculadora.main()
     else:
@@ -29,18 +35,24 @@ def aspects_menu():
     print("3. Aspect Z")
     choice = input("Selecciona una opcion: ")
 
-# def agents_menu():
-#     clear_screen()
-#     print("\nAgents Menu:")
-#     print("1. Agent 1")
-#     print("2. Agent 2")
-#     print("3. Agent 3")
-#     choice = input("Select an option: ")
-#     print(f"You selected Agent {choice}")
+def agents_menu():
+    clear_screen()
+    print("\nMenu de Componentes:")
+    print("1. Agentes fibonaci")
+    print("2. Agentes montecarlo")
+    choice = input("Selecciona una opcion: ")
+    if choice == '1':
+        fibonaci.fibonaci()
+    elif choice == '2':
+        montecarlo.monte_carlo()
+    else:
+        print("eleccion invalida prueba de nuevo.")
+        input("Presiona enter para continuar...")
+
 
 def main_menu():
     clear_screen()
-    print("Hola!")
+    print("Hola", x, "!")
     print("Seleccciona un paradigma preferido:")
     print("1. Componentes")
     print("2. Aspectos")
@@ -55,7 +67,7 @@ def main_menu():
             aspects_menu()
             break
         elif choice == '3':
-            
+            agents_menu()
             break
         else:
             print("opcion invalida.")
