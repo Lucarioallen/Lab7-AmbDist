@@ -31,7 +31,7 @@ def agents_menu():
     print(f"You selected Agent {choice}")
 
 def main_menu():
-    clear_screen()
+    
     print("Hello!")
     print("Select your preferred paradigm:")
     print("1. Components")
