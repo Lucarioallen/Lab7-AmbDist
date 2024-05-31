@@ -21,10 +21,12 @@ def components_menu():
     print("2. Component calculadora")
     choice = input("Selecciona una opcion: ")
     if choice == '1':
-            load_and_execute_module('componente_1')
+        #load_and_execute_module('componente_1')
+        import componente_1
     elif choice == '2':
-            load_and_execute_module('calculadora')
-            
+        #load_and_execute_module('calculadora')
+        import calculadora 
+        #calculadora.execute()
     else:
         print("eleccion invalida prueba de nuevo.")
         input("Presiona enter para continuar...")
@@ -48,7 +50,7 @@ def aspects_menu():
 #     print(f"You selected Agent {choice}")
 
 def main_menu():
-    
+    clear_screen()
     print("Hola!")
     print("Selectciona un paradigma preferido:")
     print("1. Componentes")
@@ -70,4 +72,5 @@ def main_menu():
             print("opcion invalida.")
 
 while(True):
+    clear_screen()
     main_menu()
