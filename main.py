@@ -12,12 +12,9 @@ def components_menu():
     print("2. Component calculadora")
     choice = input("Selecciona una opcion: ")
     if choice == '1':
-        #load_and_execute_module('componente_1')
         import componente_1
     elif choice == '2':
-        #load_and_execute_module('calculadora')
         import calculadora 
-        #calculadora.execute()
     else:
         print("eleccion invalida prueba de nuevo.")
         input("Presiona enter para continuar...")
